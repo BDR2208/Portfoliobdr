@@ -1,0 +1,279 @@
+body {
+   margin: 0%;
+   font-family: 'IBM Plex Serif', serif;
+   font-family: 'Oswald', sans-serif;
+   font-size: 15px;
+ color: black;
+ line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing:border-box
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+} 
+/* Conteiner */
+.conteiner{
+   width: 100%;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+/* Intro */ 
+.intro{
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   background:linear-gradient(to right, blue, pink) center
+   no-repeat;
+   flex-direction: column;
+   justify-content: center;
+   background-size: cover;
+}
+
+.intro__title{
+   color: #fff;
+   font-size: 25px;
+   font-weight: 200;
+   text-align: center;
+   line-height: 1;
+}
+.intro__inner {
+   width: 100%;
+   max-width: 880px;
+   margin: 0 auto;
+}
+.item {
+   display: block;
+ }
+ 
+ .photo {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   overflow: hidden;
+   
+ }
+ 
+ .personPhoto {
+   border-radius: 50%;
+   width: 100%;
+   max-width: 100%;
+   height: 100%;
+   margin: 0 auto;
+ }
+
+
+
+/*heder*/
+.header {
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+}
+.header__logo {
+   font-size: 30px;
+   font-weight: 700;
+   color: #fff;
+   margin-left: 45px;
+   
+}
+.header__iner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #333;
+}
+.header_fixed{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   animation: fixedMenu 1s forwards;
+}
+ 
+/* Nav */
+.navbar{
+   font-size: 14px;
+   text-transform: uppercase;
+   }
+.scroled{
+   position: fixed
+}   
+.nav__link {
+   display: inline-block;
+   vertical-align: top;
+   margin:0 15px;
+   color: #fff;
+   text-decoration: none;
+   transition: color .2s linear;
+   position: relative;
+}
+.nav__link:after {
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+
+background-color: rgba(255, 255, 255, 0.486);
+opacity: 0;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1;
+transition: linear;
+}
+.nav__link:hover
+{
+   color: rgba(255, 255, 255, 0.486);
+}
+.nav__link:hover:after{
+   opacity: 1;
+}
+/*section*/
+.section {
+   padding: 80px 0;
+}
+.section__header {
+   margin-bottom: 40px;
+   width: 100%;
+   max-width: 950px;
+   margin: 0 auto 40px;
+   text-align: center;
+}
+.section__suptitle{
+   font-size: 24px;
+   color: #333;
+}
+.section__title{
+   font-size: 30px;
+   font-weight: 700;
+   color: #333;
+   text-transform: uppercase;
+
+}
+.selection__text{
+   color: #999;
+
+}
+/*about*/
+.about{
+   display: flex;
+justify-content: space-between
+}
+.about__item{
+ width: 100%;
+ align-items: center;
+}
+.about__img{
+  width: 100%;
+  height: 100%;
+}
+/*Statistics*/
+.statistics{
+   background-color: rgb(89, 175, 255);  
+}
+.stats{
+   display: flex;
+}
+.stats__iteam{
+   flex: 1 1 0;
+   padding: 70px 25px;
+   border-left: 1px solid #fff;
+   text-align: center;
+   color: #fff;
+}
+.stats__iteam:last-child{
+   border-right: 1px solid #fff;
+}
+.stats__count{
+   margin-bottom: 10px;
+   font-size: 72px;
+   font-weight: 700;
+   line-height: 1;
+}
+.stats__tetxs{
+   font-size: 14px;
+   text-transform: uppercase;
+}
+/*section*/
+.section {
+   padding: 80px 0;
+}
+.section__header {
+   margin-bottom: 40px;
+   width: 100%;
+   max-width: 950px;
+   margin: 0 auto 40px;
+   text-align: center;
+}
+.section__suptitle{
+   font-size: 24px;
+   color: #333;
+}
+.section__title{
+   font-size: 30px;
+   font-weight: 700;
+   color: #333;
+   text-transform: uppercase;
+
+}
+.selection__text{
+   color: #999;
+
+}
+/*about*/
+.about{
+   display: flex;
+justify-content: space-between
+}
+.about__item{
+ width: 100%;
+ align-items: center;
+}
+.about__img{
+  width: 100%;
+  height: 100%;
+}
+
+/*educarion*/
+.abouted{
+   display: flex;
+   justify-content: space-between
+}
+.about__item_ed{
+   width: 30%;
+ align-items: center;
+ transform: translate3d(-10px, -10px, 0);
+ 
+}
+.about__img_ed{
+
+   height: auto;
+   align-items: center;
+   transform: transform 1s;
+}
+.education{
+   padding: 80px 0;
+}
+.education_header{ 
+   margin-bottom: 10px;
+   width: 100%;
+   max-width: 1031px;
+   margin: 0 auto 10px;
+   text-align: center;
+}
+.education__suptitle{
+   font-size: 24px;
+   color: #333;
+}
+.nevbared{
+   font-size: 13px;
+   text-transform: uppercase;
+}
